@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Olson – Engineering Portfolio</title>
+  <title>Alex Olson – Engineering Projects</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,68 +12,60 @@
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
+      background: #f5f5f5;
     }
-    h1, h2, h3 {
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
       color: #222;
     }
+
     .project {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
+      background: #ffffff;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     }
-    .project a {
-      color: #0645ad;
-      text-decoration: none;
-    }
-    .project a:hover {
-      text-decoration: underline;
-    }
-    img {
-      max-width: 100%;
-      margin: 10px 0;
-      border-radius: 6px;
+
+    .project h2 {
+      margin-top: 0;
+      color: #111;
     }
   </style>
 </head>
 
 <body>
-  <h1>Alex Olson</h1>
-  <h2>Engineering Projects</h2>
-  <p>Here are selected projects from coursework, clubs, and independent builds.</p>
 
-  <!-- Project 1 -->
+  <h1>Engineering Projects</h1>
+
+  <!-- PLC Project -->
   <div class="project">
-    <h3>CNC Fixture Design</h3>
-    <p>Designed and machined a modular fixture to reduce setup time by 35%. Validated stiffness via FEA and real test cuts.</p>
-    <p><b>Skills:</b> Fusion 360, CNC, DFMA</p>
-    <!-- Add image if you want -->
-    <!-- <img src="images/cnc-fixture.jpg" alt="CNC fixture"> -->
+    <h2>PLC Project</h2>
     <p>
-      <a href="#">GitHub Repo</a> |
-      <a href="#">Project Report</a> |
-      <a href="#">Demo Video</a>
+      Designed and built a complete PLC-controlled system integrating five indicators, five pushbuttons,
+      and two mushroom-head emergency stops. A solar panel served as the primary analog input, allowing the PLC
+      to modulate motor speed based on real-time light intensity.
+    </p>
+    <p>
+      Using Studio 5000, I developed all control logic including forward/reverse operation, system shutdown,
+      and additional modes that simulated real-world signaling patterns such as streetlight and pedestrian
+      “walk/stop” sequences. The project included full panel wiring, I/O configuration, safety integration,
+      and ladder logic programming.
     </p>
   </div>
 
-  <!-- Project 2 -->
+  <!-- Fire Piston Project -->
   <div class="project">
-    <h3>Software Defined Radio Scanner</h3>
-    <p>Implemented FM demodulation pipeline and created a Python GUI for tuning and recording.</p>
-    <p><b>Skills:</b> Python, SDR, DSP</p>
+    <h2>Fire Piston</h2>
     <p>
-      <a href="#">GitHub Repo</a> |
-      <a href="#">Notes</a>
+      A fire piston is a precision piston-and-cylinder device that ignites tinder through rapid compression.
+      The piston was machined from aluminum alloy and the cylinder from steel using both lathe and milling operations.
     </p>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="project">
-    <h3>Robot Path Planning (A*)</h3>
-    <p>Built a grid-based A* path planner with obstacle handling and runtime comparisons.</p>
-    <p><b>Skills:</b> C++, A*, ROS</p>
     <p>
-      <a href="#">GitHub Repo</a> |
-      <a href="#">Report</a>
+      The project also included internal and external threading to create a functional tinder‑storage compartment.
+      The final assembly is lightweight and demonstrates tight machining tolerances and smooth compression.
     </p>
   </div>
 
